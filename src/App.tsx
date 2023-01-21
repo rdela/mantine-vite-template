@@ -1,8 +1,7 @@
-import { Text, Button, Stack, Title, useMantineTheme } from "@mantine/core";
+import { Text, Button, Stack, Title } from "@mantine/core";
 import { ThemeProvider } from "./ThemeProvider";
 
 export default function App() {
-  const theme = useMantineTheme();
   return (
     <ThemeProvider>
       <Stack align="center" mt={50}>
@@ -18,7 +17,11 @@ export default function App() {
         <Title size="h1" order={2} align="right">
           H2 size h1?
         </Title>
-        <Title variant="gradient" gradient={theme.fn.gradient()} order={2}>
+        <Title
+          variant="gradient"
+          gradient={{ deg: 30, from: "cornflowerblue", to: "palegreen" }}
+          order={2}
+        >
           H2 gradient?
         </Title>
         <Button>Click the button</Button>
