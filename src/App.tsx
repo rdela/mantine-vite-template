@@ -9,7 +9,6 @@ export default function App() {
         <Text size="xl" weight={500}>
           Welcome to Mantine!
         </Text>
-        <Button>Click the button</Button>
         <Title size={12} align="center">
           H1 size 12?
         </Title>
@@ -22,6 +21,7 @@ export default function App() {
         <Title variant="gradient" gradient={theme.fn.gradient()} order={2}>
           H2 gradient?
         </Title>
+        <Button>Click the button</Button>
       </Stack>
     </ThemeProvider>
   );
